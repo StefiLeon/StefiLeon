@@ -1,0 +1,16 @@
+/*Comentarios Index*/
+
+.comentarios-index {
+    width: 100%;
+    height: 25rem;
+    display: block;
+    z-index: 0;
+    background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/171169821_2500807340227583_6503401804576920158_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=0debeb&_nc_ohc=5YVFS--eQdcAX9ukoL3&_nc_ht=scontent.faep24-1.fna&oh=666d1715c4ff452ce32f7fd73d97a2e0&oe=609E893B);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    h2 {
+        text-shadow: 2px 2px black;
+        text-align: center;
+    }
+}

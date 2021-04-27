@@ -1,0 +1,343 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Tipografias*/
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Lato', 'Roboto', sans-serif;
+  font-variant: small-caps;
+  color: whitesmoke; }
+
+h1 {
+  font-size: 70px; }
+
+h2 {
+  font-size: 35px; }
+
+h3 {
+  font-size: 23.33333px; }
+
+h4 {
+  font-size: 17.5px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 11.66667px; }
+
+p {
+  font-size: 16px;
+  color: black;
+  font-variant: none; }
+
+.titulo--oscuro {
+  color: #212529; }
+
+/*Body*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 1rem; }
+
+.body-section {
+  padding: 6em 0;
+  position: relative; }
+
+/*Hero*/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg_1.jpg");
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .hero-text p {
+    color: #a09f9f;
+    font-size: 25px;
+    font-variant: unset; }
+
+/*Último partido*/
+.partido-1 {
+  position: relative;
+  background: #212529;
+  box-shadow: 0px 75px 95px -65px rgba(0, 0, 0, 0.66);
+  border-radius: 5px;
+  margin-top: -60px; }
+  .partido-1 .texto {
+    width: 100%;
+    display: block; }
+    .partido-1 .texto h3 {
+      font-size: 18px;
+      color: whitesmoke; }
+      .partido-1 .texto h3 span {
+        display: block; }
+    .partido-1 .texto span {
+      color: #6c757d; }
+    .partido-1 .texto .boton {
+      display: block; }
+
+.logo-equipo {
+  width: 90px;
+  position: relative; }
+  .logo-equipo .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(../img/team-1.jpg);
+    background-size: contain;
+    z-index: 2; }
+    .logo-equipo .img.img-2 {
+      left: 35px;
+      z-index: 3;
+      background-image: url(../img/team-2.jpg); }
+  .logo-equipo .nombre-equipo {
+    width: calc(100% - 90px); }
+
+#boton-resumen {
+  width: 90%; }
+
+/*Partido anterior*/
+.h3--claro {
+  color: #6c757d;
+  font-size: 17px; }
+
+.h3--oscuro {
+  color: #212529; }
+
+.tanteador {
+  width: 100%;
+  border: 1px solid #6c757d;
+  background: whitesmoke;
+  border-radius: 4px;
+  padding: 2em 1em; }
+  .tanteador .divisor {
+    position: relative; }
+    .tanteador .divisor span {
+      padding: 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px; }
+  .tanteador .equipo {
+    display: block;
+    width: 50%; }
+    .tanteador .equipo .img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-image: url(../img/team-1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 0;
+      box-shadow: 0 25px 35px -15px rgba(0, 0, 0, 0.09); }
+    .tanteador .equipo .desc {
+      width: calc(100% - 100px); }
+    .tanteador .equipo .resultado {
+      font-weight: 800;
+      font-size: 50px;
+      color: black; }
+      .tanteador .equipo .resultado.ganador span {
+        border-bottom: 5px solid #3873E0; }
+      .tanteador .equipo .resultado.perdedor span {
+        color: rgba(0, 0, 0, 0.2); }
+    .tanteador .equipo h4 {
+      color: #212529; }
+
+.img--video {
+  background-image: url("https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/171192740_2500815030226814_1501416277259884980_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=0debeb&_nc_ohc=RQNegIAgXqwAX8NXPMJ&_nc_ht=scontent.faep24-1.fna&oh=4ae7cfb385cf9400d6368d521cbadb64&oe=609DBD8E");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+  width: 100%; }
+
+.icono-video {
+  width: 60px;
+  height: 60px;
+  background: whitesmoke;
+  border-radius: 50%; }
+
+/*Archivo Index*/
+.archivo-index {
+  position: relative; }
+  .archivo-index .img {
+    display: block;
+    width: 100%;
+    background-image: url(https://www.afa.com.ar/upload/torneo/Marzo%202020/vs%20jp2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 50%; }
+  .archivo-index a {
+    color: #31B5F7; }
+    .archivo-index a:active {
+      color: #3873E0;
+      text-decoration: none; }
+  .archivo-index .blockquote .quote {
+    color: whitesmoke;
+    background-color: #31B5F7;
+    font-weight: 600;
+    font-style: none; }
+
+/*Carousel de fotos*/
+.fotos-index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/68259353_2055012188140436_3504178454331392000_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=Ah5h94_egLwAX_MBurw&_nc_ht=scontent.faep24-1.fna&oh=0371dbc136775cbd6ff1f86df5a4ccc1&oe=60AB1E42);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80%; }
+  .fotos-index .copete-carousel {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    color: #31B5F7; }
+  .fotos-index .titulo-carousel a {
+    font-size: 3rem;
+    letter-spacing: 100%;
+    text-decoration: none;
+    font-weight: bolder; }
+    .fotos-index .titulo-carousel a:active {
+      text-decoration: none;
+      color: #31B5F7; }
+
+.item .img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 20%;
+  border-bottom: 3px inset whitesmoke;
+  border-right: 3px inset whitesmoke;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item .img--amistosos {
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/175424406_2505118623129788_2966019858580352962_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=0debeb&_nc_ohc=HPvQcd7GFlEAX-SVj-O&_nc_ht=scontent.faep24-1.fna&oh=46126bcca31707ac619cedc842d47c37&oe=609E51D3);
+  background-position: 50% 50%; }
+
+.item .img--entrenamientos {
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/167033310_2494760167498967_2199763081114358818_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=Vgh7GL8q740AX8nfFAH&_nc_ht=scontent.faep24-1.fna&oh=75cca5ab0d5e3a40dacf889dceaa30cf&oe=609EAC51);
+  background-position: 50% 50%; }
+
+.item .img--repechaje {
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/46283566_1906442732997383_7424443676622848000_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=YWEDISgfG2gAX-B6yAF&_nc_ht=scontent.faep24-1.fna&oh=8d32541f77d24fb18d0f77f01cd2845a&oe=609F1FA2);
+  background-position: 50% 50%; }
+
+.item .img--lima {
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/67960164_2055711571403831_7474448713834823680_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=IdCxE7S6prwAX9nTyaN&_nc_ht=scontent.faep24-1.fna&oh=3ad6d722a0e7f6fd61dd0ff68a362c7b&oe=609FAAA6);
+  background-position: 30% 50%; }
+
+.item .img--juveniles {
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/122763901_2388620464779605_3387868399737112877_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=kOm34AIrMNgAX9dEZ-w&_nc_ht=scontent.faep24-1.fna&oh=2419a932f218cb216acd25aba96f108a&oe=60A0A39B);
+  background-position: 50% 70%; }
+
+/*Apertura Index*/
+.container-apertura {
+  overflow: hidden; }
+  .container-apertura .texto {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; }
+    .container-apertura .texto h3 {
+      font-size: 18px;
+      text-decoration: none;
+      color: #31B5F7;
+      font-weight: bold;
+      text-align: center; }
+      .container-apertura .texto h3 a {
+        text-decoration: inherit;
+        color: #31B5F7; }
+        .container-apertura .texto h3 a:hover, .container-apertura .texto h3 a:active {
+          color: #31B5F7; }
+
+.container-apertura--imagen {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 270px; }
+  .container-apertura--imagen:after {
+    position: absolute;
+    opacity: .3;
+    background: rgba(0, 0, 0, 0);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0) 27%, black 100%); }
+
+#imagen--apertura {
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/131245520_2425197524455232_1275837926128626477_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=0debeb&_nc_ohc=TpIbH37kuqgAX9kqWDg&_nc_ht=scontent.faep24-1.fna&oh=8f34b949910259c6f5c82bd0ffb25225&oe=609E1046);
+  background-position: 65% 50%; }
+
+#imagen--goleadoras {
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/129953725_2423268464648138_1641506402241178571_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=0debeb&_nc_ohc=TtHF8Tu6kuUAX9lHVRu&_nc_ht=scontent.faep24-1.fna&oh=7fa090ae98ddf255f7b660cbb6e41683&oe=609EC43B); }
+
+#imagen--resultados {
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/140805661_2451335715174746_154792392540004564_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=0debeb&_nc_ohc=ftRo6MwluqcAX-ACX32&_nc_ht=scontent.faep24-1.fna&oh=118e1d30a588baeead4314bec4f71f32&oe=609E4BE8); }
+
+#imagen--historia {
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/62354336_10219034929681316_8653737228830244864_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=b9115d&_nc_ohc=aEmBPqwwqikAX87rxxz&_nc_ht=scontent.faep24-1.fna&oh=52101e75a7de4fb612c04bff26a95549&oe=60A0D57D); }
+
+/*Comentarios Index*/
+.comentarios-index {
+  width: 100%;
+  height: 25rem;
+  display: block;
+  z-index: 0;
+  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/171169821_2500807340227583_6503401804576920158_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=0debeb&_nc_ohc=5YVFS--eQdcAX9ukoL3&_nc_ht=scontent.faep24-1.fna&oh=666d1715c4ff452ce32f7fd73d97a2e0&oe=609E893B);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .comentarios-index h2 {
+    text-shadow: 2px 2px black;
+    text-align: center; }
+
+/*Footer*/
+footer {
+  padding: 0.8em 0;
+  z-index: 0;
+  background-color: #31B5F7; }
+  footer .widget ul li a {
+    color: grey; }
+    footer .widget ul li a span {
+      color: whitesmoke; }
+  footer p {
+    color: rgba(245, 245, 245, 0.7);
+    padding-top: 0.2rem;
+    padding-bottom: 0; }
+  footer a {
+    color: rgba(245, 245, 245, 0.7); }
+    footer a:hover {
+      color: whitesmoke; }
+
+.footer-social-media li {
+  list-style: none;
+  margin: 0 5px 0 0;
+  display: inline-block; }
+  .footer-social-media li a {
+    height: 50px;
+    width: 50px;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    background: #3873E0;
+    border-radius: 50%;
+    position: relative; }
+    .footer-social-media li a span {
+      position: absolute;
+      font-size: 25px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: whitesmoke !important; }

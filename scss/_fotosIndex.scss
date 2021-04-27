@@ -1,0 +1,65 @@
+/*Carousel de fotos*/
+
+$border: 3px inset $blanco;
+
+.fotos-index {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/68259353_2055012188140436_3504178454331392000_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=Ah5h94_egLwAX_MBurw&_nc_ht=scontent.faep24-1.fna&oh=0371dbc136775cbd6ff1f86df5a4ccc1&oe=60AB1E42);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80%;
+    .copete-carousel{
+        font-size: 18px;
+        display: block;
+        margin-bottom: 0px;
+        letter-spacing: 1px;
+        color: $claro;
+    }
+    .titulo-carousel {
+        a {
+            font-size: 3rem;
+            letter-spacing: 100%;
+            text-decoration: none;
+            font-weight: bolder;
+            &:active{
+                text-decoration: none;
+                color: $claro;
+            }
+        }
+    }
+}
+
+.item {
+    .img{
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        border-radius: 20%;
+        border-bottom: $border;
+        border-right: $border;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .img--amistosos {
+        background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/175424406_2505118623129788_2966019858580352962_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=0debeb&_nc_ohc=HPvQcd7GFlEAX-SVj-O&_nc_ht=scontent.faep24-1.fna&oh=46126bcca31707ac619cedc842d47c37&oe=609E51D3);
+        background-position: 50% 50%;
+    }
+    .img--entrenamientos {
+        background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/167033310_2494760167498967_2199763081114358818_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=Vgh7GL8q740AX8nfFAH&_nc_ht=scontent.faep24-1.fna&oh=75cca5ab0d5e3a40dacf889dceaa30cf&oe=609EAC51);
+        background-position: 50% 50%;
+    }
+    .img--repechaje {
+        background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/46283566_1906442732997383_7424443676622848000_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=YWEDISgfG2gAX-B6yAF&_nc_ht=scontent.faep24-1.fna&oh=8d32541f77d24fb18d0f77f01cd2845a&oe=609F1FA2);
+        background-position: 50% 50%;
+    }
+    .img--lima {
+        background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/67960164_2055711571403831_7474448713834823680_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=IdCxE7S6prwAX9nTyaN&_nc_ht=scontent.faep24-1.fna&oh=3ad6d722a0e7f6fd61dd0ff68a362c7b&oe=609FAAA6);
+        background-position: 30% 50%;
+    }
+    .img--juveniles {
+        background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/122763901_2388620464779605_3387868399737112877_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=kOm34AIrMNgAX9dEZ-w&_nc_ht=scontent.faep24-1.fna&oh=2419a932f218cb216acd25aba96f108a&oe=60A0A39B);
+        background-position: 50% 70%;
+    }
+}

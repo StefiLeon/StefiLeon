@@ -1,0 +1,58 @@
+/*Apertura Index*/
+
+.container-apertura {
+    overflow: hidden;
+    .texto {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        h3 {
+            font-size: 18px;
+            text-decoration: none;
+            color: $claro;
+            font-weight: bold;
+            text-align: center;
+            a {
+                text-decoration: inherit;
+                color: $claro;
+                &:hover, &:active {
+                    color: $claro;
+                }
+            }
+        }
+    }
+}
+
+.container-apertura--imagen {
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 270px;
+    &:after {
+        position: absolute;
+        opacity: .3;
+        background: rgba(0,0,0,0);
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 17%, rgba(0,0,0,0) 27%, rgba(0,0,0,1) 100%);
+    }
+}
+
+#imagen--apertura {
+    background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/131245520_2425197524455232_1275837926128626477_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=0debeb&_nc_ohc=TpIbH37kuqgAX9kqWDg&_nc_ht=scontent.faep24-1.fna&oh=8f34b949910259c6f5c82bd0ffb25225&oe=609E1046);
+    background-position: 65% 50%;
+}
+
+#imagen--goleadoras {
+    background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/129953725_2423268464648138_1641506402241178571_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=0debeb&_nc_ohc=TtHF8Tu6kuUAX9lHVRu&_nc_ht=scontent.faep24-1.fna&oh=7fa090ae98ddf255f7b660cbb6e41683&oe=609EC43B);
+}
+
+#imagen--resultados {
+    background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/140805661_2451335715174746_154792392540004564_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=0debeb&_nc_ohc=ftRo6MwluqcAX-ACX32&_nc_ht=scontent.faep24-1.fna&oh=118e1d30a588baeead4314bec4f71f32&oe=609E4BE8);
+}
+
+#imagen--historia {
+    background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/62354336_10219034929681316_8653737228830244864_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=b9115d&_nc_ohc=aEmBPqwwqikAX87rxxz&_nc_ht=scontent.faep24-1.fna&oh=52101e75a7de4fb612c04bff26a95549&oe=60A0D57D);
+}

@@ -1,0 +1,21 @@
+/*Tipografias*/
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family: 'Lato', 'Roboto', sans-serif;
+    font-variant: small-caps;
+    color: whitesmoke;
+}
+
+@for $font from 1 through 6{
+    h#{$font} {font-size:35px*(2/$font);}
+}
+
+p {
+    font-size: 16px;
+    color: black;
+    font-variant: none;
+}
+
+.titulo--oscuro{
+    color: $grisOscuro;
+}
