@@ -47,7 +47,6 @@ body, html {
 
 /*Hero*/
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg_1.jpg");
   background-attachment: fixed;
   height: 100%;
   width: 100%;
@@ -66,6 +65,9 @@ body, html {
     color: #a09f9f;
     font-size: 25px;
     font-variant: unset; }
+
+#hero--index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg_1.jpg"); }
 
 /*Último partido*/
 .partido-1 {
