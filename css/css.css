@@ -35,6 +35,9 @@ p {
 .titulo--oscuro {
   color: #212529; }
 
+#texto--tarjetas {
+  color: #212529; }
+
 /*Body*/
 body, html {
   height: 100%;
