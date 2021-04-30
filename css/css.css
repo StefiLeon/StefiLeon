@@ -38,6 +38,9 @@ p {
 #texto--tarjetas {
   color: #212529; }
 
+.texto--contacto {
+  color: #212529; }
+
 /*Body*/
 body, html {
   height: 100%;
@@ -87,6 +90,9 @@ body, html {
 
 #hero--archivo {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.afa.com.ar/upload/torneo/Marzo%202020/camino2-3.jpg"); }
+
+#hero--contacto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/67489415_2047315308910124_7686853765952962560_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=P2ZzQMQBtGIAX8YKhWf&_nc_ht=scontent.faep24-1.fna&oh=d12c4ea5ef288c0678cb9898d0448234&oe=60A11DA4"); }
 
 /*Último partido*/
 .partido-1 {
@@ -424,6 +430,11 @@ body, html {
   .columna-fotos {
     flex: 100%;
     max-width: 100%; } }
+
+/*Contacto*/
+.redes--fondo {
+  background-color: #b1b5b8be;
+  border-radius: 30px; }
 
 /*Footer*/
 footer {
