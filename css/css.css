@@ -94,6 +94,16 @@ body, html {
 #hero--contacto {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/67489415_2047315308910124_7686853765952962560_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=P2ZzQMQBtGIAX8YKhWf&_nc_ht=scontent.faep24-1.fna&oh=d12c4ea5ef288c0678cb9898d0448234&oe=60A11DA4"); }
 
+#hero--planteles {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/131245520_2425197524455232_1275837926128626477_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=0debeb&_nc_ohc=TpIbH37kuqgAX9kqWDg&_nc_ht=scontent.faep24-1.fna&oh=8f34b949910259c6f5c82bd0ffb25225&oe=609E1046"); }
+
+#hero--goleadoras {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/137599538_2444587732516211_3737527719313620540_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=0debeb&_nc_ohc=BehCMeoptJYAX_-nrZ9&_nc_ht=scontent.faep24-1.fna&oh=c2a1b8fb080f12ce18eb1aa066b6e039&oe=60B2AB4F");
+  background-position: 50% 0%; }
+
+#hero--resultados {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/128566062_2414867965488188_2888003880349174774_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=j2tJgw-6lScAX8lb1on&_nc_ht=scontent.faep24-1.fna&oh=bc5d8ce63506c324e3e86aa2eaf888cc&oe=60B3B6AA"); }
+
 /*Último partido*/
 .partido-1 {
   position: relative;
@@ -435,6 +445,53 @@ body, html {
 .redes--fondo {
   background-color: #b1b5b8be;
   border-radius: 30px; }
+
+/*Planteles*/
+.planteles--formato {
+  overflow: hidden; }
+  .planteles--formato div {
+    display: inline-block; }
+  .planteles--formato a {
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 250px; }
+
+/*Tarjetas*/
+.tarjeta {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s; }
+  .tarjeta:hover {
+    box-shadow: 0 8px 16px rgba(45, 138, 155, 0.5); }
+  .tarjeta img {
+    max-width: 100%;
+    height: 20rem;
+    width: 15rem;
+    object-fit: cover; }
+  .tarjeta .container h4 {
+    color: #3873E0;
+    font-size: 25px; }
+
+#carousel--goleadoras {
+  height: 30rem; }
+  #carousel--goleadoras img {
+    height: 30rem;
+    object-fit: cover; }
+  #carousel--goleadoras h5 {
+    font-size: 25px;
+    background-color: rgba(87, 86, 86, 0.5); }
+  #carousel--goleadoras p {
+    font-size: 20px;
+    color: whitesmoke;
+    background-color: rgba(87, 86, 86, 0.5); }
+
+/*Resultados*/
+.container--sombra {
+  box-shadow: 5px 5px #212529; }
 
 /*Footer*/
 footer {
