@@ -3,3 +3,7 @@
 *.css.map
 *.sass.map
 *.scss.map
+
+###Json###
+package-lock.Json
+package.json
