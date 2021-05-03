@@ -78,6 +78,12 @@ body, html {
     color: #a09f9f;
     font-size: 25px;
     font-variant: unset; }
+  @media (max-width: 576px) {
+    .hero-text {
+      text-align: right;
+      margin-left: 0; }
+      .hero-text h1 {
+        font-size: 50px; } }
 
 #hero--index {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg_1.jpg"); }
@@ -117,12 +123,25 @@ body, html {
     .partido-1 .texto h3 {
       font-size: 18px;
       color: whitesmoke; }
+      @media (max-width: 576px) {
+        .partido-1 .texto h3 {
+          font-size: 22px;
+          padding-left: 2rem; } }
       .partido-1 .texto h3 span {
         display: block; }
     .partido-1 .texto span {
       color: #6c757d; }
     .partido-1 .texto .boton {
       display: block; }
+  @media (max-width: 576px) {
+    .partido-1 {
+      margin-top: -40px;
+      border-radius: 3px;
+      box-shadow: 0; } }
+
+@media (max-width: 576px) {
+  #tipo-partido {
+    display: none; } }
 
 .logo-equipo {
   width: 90px;
@@ -141,8 +160,10 @@ body, html {
       left: 35px;
       z-index: 3;
       background-image: url(../img/team-2.jpg); }
-  .logo-equipo .nombre-equipo {
-    width: calc(100% - 90px); }
+
+@media (max-width: 576px) {
+  .nombre-equipo h3 {
+    text-align: right; } }
 
 #boton-resumen {
   width: 90%; }
