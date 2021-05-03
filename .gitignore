@@ -5,5 +5,5 @@
 *.scss.map
 
 ###Json###
-package-lock.Json
-package.json
+.package-lock.Json
+.package.json
