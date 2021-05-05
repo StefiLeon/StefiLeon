@@ -41,6 +41,11 @@ p {
 .texto--contacto {
   color: #212529; }
 
+@media (max-width: 576px) {
+  .titulo--chico {
+    font-size: 2rem;
+    color: #3873E0; } }
+
 /*Body*/
 body, html {
   height: 100%;
@@ -48,8 +53,12 @@ body, html {
   font-size: 1rem; }
 
 .body-section {
-  padding: 6em 0;
+  padding: 3em 0;
   position: relative; }
+  @media (max-width: 576px) {
+    .body-section {
+      padding: 1em;
+      margin: 0; } }
 
 #tabla--fondo {
   background: url(https://cdn5.dibujos.net/dibujos/pintar/balon-de-futbol_2.png) repeat center center fixed;
@@ -57,6 +66,35 @@ body, html {
 
 #img--archivo {
   max-width: 100%; }
+
+@media (max-width: 576px) {
+  #tabla--responsive table, #tabla--responsive thead, #tabla--responsive tbody, #tabla--responsive th, #tabla--responsive td, #tabla--responsive tr {
+    display: block; }
+  #tabla--responsive thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  #tabla--responsive tr {
+    border: 1px solid black; }
+  #tabla--responsive td {
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    position: relative;
+    padding-left: 50%; }
+  #tabla--responsive td:before {
+    position: absolute;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap; }
+  #tabla--responsive td:nth-of-type(1):before {
+    content: "Fecha"; }
+  #tabla--responsive td:nth-of-type(2):before {
+    content: "Partido"; }
+  #tabla--responsive td:nth-of-type(3):before {
+    content: "Competencia"; }
+  #tabla--responsive td:nth-of-type(4):before {
+    content: "Lugar"; } }
 
 /*Hero*/
 .hero-image {
@@ -107,7 +145,8 @@ body, html {
   background-position: 50% 0%; }
 
 #hero--resultados {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/128566062_2414867965488188_2888003880349174774_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=j2tJgw-6lScAX8lb1on&_nc_ht=scontent.faep24-1.fna&oh=bc5d8ce63506c324e3e86aa2eaf888cc&oe=60B3B6AA"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/128566062_2414867965488188_2888003880349174774_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=j2tJgw-6lScAX8lb1on&_nc_ht=scontent.faep24-1.fna&oh=bc5d8ce63506c324e3e86aa2eaf888cc&oe=60B3B6AA");
+  background-position: 70% center; }
 
 #hero--404 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/dali.jpg"), alt= "Dalila Ippolito"; }
@@ -241,26 +280,37 @@ body, html {
 /*Archivo Index*/
 .archivo-index {
   position: relative; }
-  @media (max-width: 576px) {
-    .archivo-index {
-      padding-top: 0; } }
   .archivo-index .img {
-    display: block;
     width: 100%;
+    position: relative;
     background-image: url(https://www.afa.com.ar/upload/torneo/Marzo%202020/vs%20jp2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 30% 50%; }
+    background-position: 30% 50%;
+    height: 22rem; }
+    @media (max-width: 576px) {
+      .archivo-index .img {
+        margin: 1rem; } }
   .archivo-index a {
     color: #31B5F7; }
     .archivo-index a:active {
       color: #3873E0;
       text-decoration: none; }
+  @media (max-width: 576px) {
+    .archivo-index p {
+      text-align: justify; } }
   .archivo-index .blockquote .quote {
     color: whitesmoke;
     background-color: #31B5F7;
     font-weight: 600;
     font-style: none; }
+    @media (max-width: 576px) {
+      .archivo-index .blockquote .quote {
+        font-size: 14px; } }
+  @media (max-width: 576px) {
+    .archivo-index {
+      padding-top: 0;
+      margin-top: 0; } }
 
 /*Carousel de fotos*/
 .fotos-index {
@@ -268,21 +318,31 @@ body, html {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   height: 80%; }
+  @media (max-width: 576px) {
+    .fotos-index {
+      height: 50%; } }
   .fotos-index .copete-carousel {
     font-size: 18px;
     display: block;
     margin-bottom: 0px;
     letter-spacing: 1px;
     color: #31B5F7; }
+    @media (max-width: 576px) {
+      .fotos-index .copete-carousel {
+        padding-top: 5rem; } }
   .fotos-index .titulo-carousel a {
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 100%;
     text-decoration: none;
     font-weight: bolder; }
     .fotos-index .titulo-carousel a:active {
       text-decoration: none;
       color: #31B5F7; }
+  @media (max-width: 576px) {
+    .fotos-index #fotos--chiquitas {
+      display: none !important; } }
 
 .item .img {
   width: 120px;
@@ -322,6 +382,10 @@ body, html {
     position: relative;
     width: 100%;
     margin: 0 auto; }
+    @media (max-width: 576px) {
+      .container-apertura .texto {
+        margin-top: .5em;
+        padding-top: 0; } }
     .container-apertura .texto h3 {
       font-size: 18px;
       text-decoration: none;
@@ -333,6 +397,9 @@ body, html {
         color: #31B5F7; }
         .container-apertura .texto h3 a:hover, .container-apertura .texto h3 a:active {
           color: #31B5F7; }
+        @media (max-width: 576px) {
+          .container-apertura .texto h3 a {
+            padding: .2em; } }
 
 .container-apertura--imagen {
   overflow: hidden;
@@ -377,7 +444,6 @@ body, html {
     text-align: center; }
 
 /*Galeria Fotos*/
-/* Create four equal columns that sits next to each other */
 .columna-fotos {
   flex: 25%;
   max-width: 33.3%;
@@ -490,7 +556,7 @@ body, html {
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
     position: relative;
     display: block;
     width: 100%;
@@ -505,7 +571,7 @@ body, html {
   .tarjeta img {
     max-width: 100%;
     height: 20rem;
-    width: 15rem;
+    width: 12rem;
     object-fit: cover; }
   .tarjeta .container h4 {
     color: #3873E0;
@@ -518,11 +584,14 @@ body, html {
     object-fit: cover; }
   #carousel--goleadoras h5 {
     font-size: 25px;
-    background-color: rgba(87, 86, 86, 0.5); }
+    background-color: rgba(47, 153, 172, 0.8);
+    border-radius: 4px; }
   #carousel--goleadoras p {
     font-size: 20px;
     color: whitesmoke;
-    background-color: rgba(87, 86, 86, 0.5); }
+    background-color: rgba(47, 153, 172, 0.8);
+    border-radius: 4px;
+    word-spacing: 5px; }
 
 /*Resultados*/
 .container--sombra {
