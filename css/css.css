@@ -117,6 +117,10 @@ body, html {
   box-shadow: 0px 75px 95px -65px rgba(0, 0, 0, 0.66);
   border-radius: 5px;
   margin-top: -60px; }
+  @media (max-width: 576px) {
+    .partido-1 {
+      border-radius: 3px;
+      box-shadow: none; } }
   .partido-1 .texto {
     width: 100%;
     display: block; }
@@ -133,11 +137,6 @@ body, html {
       color: #6c757d; }
     .partido-1 .texto .boton {
       display: block; }
-  @media (max-width: 576px) {
-    .partido-1 {
-      margin-top: -40px;
-      border-radius: 3px;
-      box-shadow: 0; } }
 
 @media (max-width: 576px) {
   #tipo-partido {
@@ -182,8 +181,15 @@ body, html {
   background: whitesmoke;
   border-radius: 4px;
   padding: 2em 1em; }
+  @media (max-width: 576px) {
+    .tanteador {
+      padding-bottom: 0;
+      padding-top: 1em; } }
   .tanteador .divisor {
     position: relative; }
+    @media (max-width: 576px) {
+      .tanteador .divisor {
+        padding-bottom: 1em; } }
     .tanteador .divisor span {
       padding: 0 10px;
       text-transform: uppercase;
@@ -192,6 +198,9 @@ body, html {
   .tanteador .equipo {
     display: block;
     width: 50%; }
+    @media (max-width: 576px) {
+      .tanteador .equipo {
+        margin-left: 20%; } }
     .tanteador .equipo .img {
       width: 100px;
       height: 100px;
@@ -230,6 +239,9 @@ body, html {
 /*Archivo Index*/
 .archivo-index {
   position: relative; }
+  @media (max-width: 576px) {
+    .archivo-index {
+      padding-top: 0; } }
   .archivo-index .img {
     display: block;
     width: 100%;
