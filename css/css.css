@@ -278,7 +278,7 @@ body, html {
       color: #212529; }
 
 .img--video {
-  background-image: url("https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/171192740_2500815030226814_1501416277259884980_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=0debeb&_nc_ohc=RQNegIAgXqwAX8NXPMJ&_nc_ht=scontent.faep24-1.fna&oh=4ae7cfb385cf9400d6368d521cbadb64&oe=609DBD8E");
+  background-image: url("https://pbs.twimg.com/media/Eyyjl4GW8As3SRW?format=jpg&name=large");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 65%;
@@ -381,23 +381,23 @@ body, html {
   background-repeat: no-repeat; }
 
 .item .img--amistosos {
-  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/175424406_2505118623129788_2966019858580352962_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=0debeb&_nc_ohc=HPvQcd7GFlEAX-SVj-O&_nc_ht=scontent.faep24-1.fna&oh=46126bcca31707ac619cedc842d47c37&oe=609E51D3);
+  background-image: url(../img/fotos-2.jpg);
   background-position: 50% 50%; }
 
 .item .img--entrenamientos {
-  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/167033310_2494760167498967_2199763081114358818_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=Vgh7GL8q740AX8nfFAH&_nc_ht=scontent.faep24-1.fna&oh=75cca5ab0d5e3a40dacf889dceaa30cf&oe=609EAC51);
+  background-image: url(../img/fotos-1.jpg);
   background-position: 50% 50%; }
 
 .item .img--repechaje {
-  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/46283566_1906442732997383_7424443676622848000_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=YWEDISgfG2gAX-B6yAF&_nc_ht=scontent.faep24-1.fna&oh=8d32541f77d24fb18d0f77f01cd2845a&oe=609F1FA2);
+  background-image: url(../img/fotos-6.jpg);
   background-position: 50% 50%; }
 
 .item .img--lima {
-  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/67960164_2055711571403831_7474448713834823680_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=IdCxE7S6prwAX9nTyaN&_nc_ht=scontent.faep24-1.fna&oh=3ad6d722a0e7f6fd61dd0ff68a362c7b&oe=609FAAA6);
+  background-image: url(../img/fotos-3.jpg);
   background-position: 30% 50%; }
 
 .item .img--juveniles {
-  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/122763901_2388620464779605_3387868399737112877_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=kOm34AIrMNgAX9dEZ-w&_nc_ht=scontent.faep24-1.fna&oh=2419a932f218cb216acd25aba96f108a&oe=60A0A39B);
+  background-image: url(../img/fotos-5.jpg);
   background-position: 50% 70%; }
 
 /*Apertura Index*/
@@ -442,7 +442,7 @@ body, html {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0) 27%, black 100%); }
 
 #imagen--apertura {
-  background-image: url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/131245520_2425197524455232_1275837926128626477_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=0debeb&_nc_ohc=TpIbH37kuqgAX9kqWDg&_nc_ht=scontent.faep24-1.fna&oh=8f34b949910259c6f5c82bd0ffb25225&oe=609E1046);
+  background-image: url(../img/planteles.jpg);
   background-position: 65% 50%; }
 
 #imagen--goleadoras {
