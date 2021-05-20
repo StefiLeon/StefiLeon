@@ -159,6 +159,9 @@ body, html {
 #hero--404 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/dali.jpg"), alt= "Dalila Ippolito"; }
 
+#hero--presupuesto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fotos-4.jpg");}
+
 /*Último partido*/
 .partido-1 {
   position: relative;
