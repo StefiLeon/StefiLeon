@@ -9,8 +9,6 @@
     <meta name="keywords" content="FUTBOL, DEPORTE, FEMENINO, MUJER, ARGENTINA, AFA, APERTURA">
     <title>Goleadoras del Torneo Apertura de Fútbol Femenino</title>
     <link rel="icon" href="https://cdn3.ct-assets.com/assets/landings/womens-world-cup-2019/logo-f11500c9bd7395ac801e2255091433ae4942be72222ba9fba525c8dfbec2f3ba.png">
-    <!--Animations-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -34,6 +32,11 @@
         <!--Botones-->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="./productos.html" id="carritoDeCompras" class="numero-flotante position-relative d-inline-flex nav-link">Ver productos <i class="fas fa fa-shopping-cart fa-lg"></i>
+                </a>
+                <div class="container" id="lista-carrito" style="display: none"> 
+                    <p id="totalCompra"></p>
+                </div>
                 <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="./fotos.html" class="nav-link">Fotos</a></li>
                 <li class="nav-item"><a href="./archivo.html" class="nav-link">Archivo</a></li>
@@ -57,7 +60,7 @@
     <!--Empieza Hero element-->
     <div class="hero-image" id="hero--goleadoras">
         <div class="hero-text">
-            <h1 class="animate__animated animate__lightSpeedInLeft">Goleadoras</h1>
+            <h1 class="animacionDelay" style="display: none";>Goleadoras</h1>
             <p>Las romperedes del Apertura</p>
         </div>
     </div>
@@ -65,130 +68,9 @@
 
     <!--Empieza sección goleadoras-->
     <div class="container pt-5 pb-5">
-        <div class="row inline-block">
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="https://sanlorenzo.com.ar/img/plantel/deportes/2020/g/10-22_1603394639.jpg" alt="Débora Molina">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Debora Molina</h4>
-                        <p>San Lorenzo</p>
-                        <p><strong>5 goles</strong></p>
-                        <p>14/02/1985</p>
-                        <p>Último gol: fecha 4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="https://www.bocajuniors.com.ar/upload/files/andrea-ojeda-mesa-de-trabajo-1_6a267.jpg" alt="Andrea Ojeda">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Andrea Ojeda</h4>
-                        <p>Boca Juniors</p>
-                        <p><strong>5 goles</strong></p>
-                        <p>17/01/1985</p>
-                        <p>Último gol: fecha 4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="https://artear-tn-prod.cdn.arcpublishing.com/resizer/uNaqSpU8oAr_dfFyZ8_XiMBKFb0=/767x0/smart/filters:quality(60)/cloudfront-us-east-1.images.arcpublishing.com/artear/PUWXYSG4HBCMXCX6QSPO632VF4.jpg" alt="Carolina Birizamberri">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Carolina Birizamberri</h4>
-                        <p>River Plate</p>
-                        <p><strong>4 goles</strong></p>
-                        <p>09/07/1995</p>
-                        <p>Último gol: fecha 4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="../img/Luz-hernandez.jpg" alt="Luz Hernández">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Luz Hernández</h4>
-                        <p>Platense</p>
-                        <p><strong>4 goles</strong></p>
-                        <p>14/05/1996</p>
-                        <p>Último gol: fecha 2</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="https://www.elporve.com.ar/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-19-at-14.08.02.jpeg" alt="Yazmín Acuña">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Yazmín Acuña</h4>
-                        <p>El Porvenir</p>
-                        <p><strong>3 goles</strong></p>
-                        <p>19/02/2002</p>
-                        <p>Último gol: fecha 3</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="https://pxb.cdn.eldiariodelarepublica.com/republica/042021/1617489424353.jpg" alt="Valentina Barroso">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Valentina Barroso</h4>
-                        <p>Independiente</p>
-                        <p><strong>3 goles</strong></p>
-                        <p>12/02/1997</p>
-                        <p>Último gol: fecha 3</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="https://www.cariverplate.com.ar/imagenes/jugadores/2020-12/1798-20.png" alt="Victoria Costa">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Victoria Costa</h4>
-                        <p>River Plate</p>
-                        <p><strong>3 goles</strong></p>
-                        <p>14/11/2000</p>
-                        <p>Último gol: fecha 2</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="https://pbs.twimg.com/profile_images/1375200222796730369/t01v_C8a_400x400.jpg" alt="Martina Del Trecco">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Martina Del Trecco</h4>
-                        <p>River</p>
-                        <p><strong>3 goles</strong></p>
-                        <p>28/10/2001</p>
-                        <p>Último gol: fecha 3</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="https://i1.wp.com/www.iamnoticias.com.ar/wp-content/uploads/2021/02/Et-dHfZXEAYOubi.jpg?w=1110&ssl=1" style="object-position: 35% 50%;" alt="Érika Hernández">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Érika Hernández</h4>
-                        <p>UAI Urquiza</p>
-                        <p><strong>3 goles</strong></p>
-                        <p>17/03/1999</p>
-                        <p>Último gol: fecha 3</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pb-4">
-                <div class="tarjeta d-flex align-items-center">
-                    <img src="https://www.cariverplate.com.ar/imagenes/jugadores/2020-12/1770-18.png" alt="Lucía Martelli">
-                    <div class="container text-center">
-                        <h4 class="mt-4 mb-4">Lucía Martelli</h4>
-                        <p>River Plate</p>
-                        <p><strong>3 goles</strong></p>
-                        <p>9/11/1989</p>
-                        <p>Último gol: fecha 3</p>
-                    </div>
-                </div>
-            </div>
+        <div class="row inline-block" id="goleadorasApertura">
         </div>
     </div>
-    <!------------------->
 
     <!--Empieza carrousel goleadoras pasadas-->
     <div id="carousel--goleadoras" class="carousel slide" data-ride="carousel">
@@ -199,21 +81,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/137240333_2444590059182645_8214028993771459115_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=0debeb&_nc_ohc=AIpFhkHU6EMAX9VBJpf&_nc_ht=scontent.faep24-1.fna&oh=5fdf2c54fba9f2afd7a28c304fbf7fcf&oe=60B387D3" style="object-position: 50% 10%;" alt="Andrea Ojeda Boca">
+                <img class="d-block w-100" src="../img/ojeda.jpg" style="object-position: 50% 10%;" alt="Andrea Ojeda Boca">
                 <div class="carousel-caption">
                     <h5>Andrea Ojeda</h5>
                     <p>Goleadora Torneo Transición 2020 - 10 goles</p>
                 </div>                
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/74526008_2112754272366227_4477486694362251264_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=SeQgXWuRFOsAX-WENI2&_nc_ht=scontent.faep24-1.fna&oh=0a6847ff48be1ba0ce204a659073438d&oe=60B29EBB" style="object-position: 50% 20%;" alt="Mariana Larroquette UAI">
+                <img class="d-block w-100" src="../img/larro2019.jpg" style="object-position: 50% 20%;" alt="Mariana Larroquette UAI">
                 <div class="carousel-caption">
                     <h5>Mariana Larroquette</h5>
                     <p>Goleadora Torneo 19/20 (susp.) - 29 goles </p>
                 </div>   
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/60069987_10218013654909303_7936547711250071552_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=EBzGjveF0eoAX8Os4Qa&_nc_ht=scontent.faep24-1.fna&oh=6c4ba6d0692b2652734253efc61783ae&oe=60B221CD" alt="Mariana Larroquette UAI">
+                <img class="d-block w-100" src="../img/larrogol.jpg" alt="Mariana Larroquette UAI">
                 <div class="carousel-caption">
                     <h5>Mariana Larroquette</h5>
                     <p>Goleadora Torneo 18/19 - 28 goles</p>
@@ -254,6 +136,13 @@
     <!--Scripts BS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!--Script JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../goleadoras.json"></script>
+    <script src="../goleadoras.js"></script>
+    <script src="../js.js"></script>
     <!-------------->
     
     </body>

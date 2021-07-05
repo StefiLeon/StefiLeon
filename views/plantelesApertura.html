@@ -9,8 +9,6 @@
     <meta name="keywords" content="FUTBOL, DEPORTE, FEMENINO, MUJER, ARGENTINA, AFA">
     <title>Planteles del fútbol femenino argentino</title>
     <link rel="icon" href="https://cdn3.ct-assets.com/assets/landings/womens-world-cup-2019/logo-f11500c9bd7395ac801e2255091433ae4942be72222ba9fba525c8dfbec2f3ba.png">
-    <!--Animations-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -34,6 +32,11 @@
         <!--Botones-->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="./productos.html" id="carritoDeCompras" class="numero-flotante position-relative d-inline-flex nav-link">Ver productos <i class="fas fa fa-shopping-cart fa-lg"></i>
+                </a>
+                <div class="container" id="lista-carrito" style="display: none"> 
+                    <p id="totalCompra"></p>
+                </div>
                 <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="./fotos.html" class="nav-link">Fotos</a></li>
                 <li class="nav-item"><a href="./archivo.html" class="nav-link">Archivo</a></li>
@@ -57,7 +60,7 @@
     <!--Empieza Hero element-->
     <div class="hero-image" id="hero--planteles">
         <div class="hero-text">
-            <h1 class="animate__animated animate__lightSpeedInLeft">Planteles</h1>
+            <h1 class="animacionDelay" style="display: none";>Planteles</h1>
             <p>Jugadoras de Primera A</p>
         </div>
     </div>
@@ -71,7 +74,7 @@
                 <!--Boca-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalBoca" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/139643039_2451336525174665_3216522679686928585_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=0debeb&_nc_ohc=bLyuNCGqdrcAX8LlSbL&_nc_ht=scontent.faep24-1.fna&oh=b601fd3b63a3b6de3c271987b823d24f&oe=60A23A5E');">
+                        <a href="#modalBoca" data-toggle="modal" style="background-image: url('../img/boca-p.jpg'); background-position: top right;">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Boca Juniors</h3>
@@ -135,7 +138,7 @@
                 <!--Comunicaciones-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalComunicaciones" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/Ey5r7FNW8AEUhz7?format=jpg&name=large');">
+                        <a href="#modalComunicaciones" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/E0476sYXsAADI4x?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Comunicaciones</h3>
@@ -196,7 +199,7 @@
                 <!--Defensores de Belgrano-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalDefensores" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/131017153_2425201324454852_1616877220406341324_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=0debeb&_nc_ohc=iF1giTyPAkkAX-OX5HI&_nc_oc=AQn6tD9XLIv8h8o9d17QwSsdPlCjLmnVAkyAyLj7srg00ciqDsBqr_pvC8P6MtAnPH0&_nc_ht=scontent.faep24-1.fna&oh=f1691c047ffadadd05010904d0798f1e&oe=60A2DE97');">
+                        <a href="#modalDefensores" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/E41N6SPXEAEbo1o?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Defensores de Belgrano</h3>
@@ -258,7 +261,7 @@
                 <!--Deportivo Español-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalDeportivo" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/84124091_100728651494267_5573989560108449792_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=e3f864&_nc_ohc=z37hTEbTZQMAX8x7lTH&_nc_ht=scontent.faep24-1.fna&oh=16fae7d088d74c6c0f51162460f866ef&oe=60A20BC9');">
+                        <a href="#modalDeportivo" data-toggle="modal" style="background-image: url('../img/dep-espaniol.jpg');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Deportivo Español</h3>
@@ -321,7 +324,7 @@
                 <!--El Porvenir-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalPorvenir" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/74862387_2102582506716737_3568764282743029760_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=JOQs2xyvRrEAX9R6_PD&_nc_ht=scontent.faep24-1.fna&oh=7a9fa51f82d500ef30b429c98222f369&oe=60A1F7A1');">
+                        <a href="#modalPorvenir" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/E41cy94WQAMqIT4?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">El Porvenir</h3>
@@ -445,7 +448,7 @@
                 <!--Excursionistas-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalExcursionistas" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/168475314_1534013930130644_5870289815736356555_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=DJnr5805OREAX_mKaGV&_nc_ht=scontent.faep24-1.fna&oh=472372727c5152d097fb4cd2ab73714f&oe=609FD675');">
+                        <a href="#modalExcursionistas" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/EzI_RljVgAEP4kU?format=jpg&name=medium');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Excursionistas</h3>
@@ -510,7 +513,7 @@
                 <!--Gimnasia-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalGimnasia" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/78740190_2140599186248402_5561030265091915776_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=_6CJ9jRcNs0AX_JRCGr&_nc_ht=scontent.faep24-1.fna&oh=582ea6a1ebbfef926d794da9da9b1662&oe=60A1B691');">
+                        <a href="#modalGimnasia" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/E4GL6SZWYAcdFI9?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Gimnasia</h3>
@@ -573,7 +576,7 @@
                 <!--Huracán-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalHuracan" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/Eo0kDzhWMAk4WCZ?format=jpg&name=4096x4096');">
+                        <a href="#modalHuracan" data-toggle="modal" style="background-image: url('../img/huracan.jpg');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Huracán</h3>
@@ -641,7 +644,7 @@
                 <!--Independiente-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalIndependiente" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/168460443_1682669278582997_93411340562477470_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=9OkoFDI1BgoAX90HYJ2&_nc_ht=scontent.faep24-1.fna&oh=42f8f5bb1d0b8978e88a25ed364ca651&oe=60A0F97C');">
+                        <a href="#modalIndependiente" data-toggle="modal" style="background-image: url('../img/independiente.jpg');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Independiente</h3>
@@ -703,7 +706,7 @@
                 <!--Lanús-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalLanus" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/174575079_4104446309593733_8594788228290602866_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=730e14&_nc_ohc=NWU0xoo2GWsAX-kJvwO&_nc_ht=scontent.faep24-1.fna&oh=fbadd0db7bc39f63c02800ccda40a496&oe=609FFDDE');">
+                        <a href="#modalLanus" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/E1DXGjQXMAEkzFr?format=jpg&name=large'); background-position: right;">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Lanús</h3>
@@ -763,7 +766,7 @@
                 <!--Platense-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalPlatense" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/166496022_1604660889731248_1318929961418901115_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=MWC3v3neivIAX88Lj-O&_nc_ht=scontent.faep24-1.fna&oh=9e957ecec0dee7aa8a045807c82e0bc2&oe=60A28409');">
+                        <a href="#modalPlatense" data-toggle="modal" style="background-image: url('../img/platense.jpg');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Platense</h3>
@@ -825,7 +828,7 @@
                 <!--Racing-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalRacing" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/128405429_2414865275488457_4896765049213838831_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=0debeb&_nc_ohc=UEUWe_EuInMAX_QvMPM&_nc_ht=scontent.faep24-1.fna&oh=0ffe4738bb1ba3dcee8bf17a3e4bc194&oe=60A0F3B1');">
+                        <a href="#modalRacing" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/En6np-yW4AEY1HK?format=jpg&name=large'); background-position: left;">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Racing</h3>
@@ -891,7 +894,7 @@
                 <!--River-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalRiver" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/130865754_2423269771314674_5888569090230231620_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=0debeb&_nc_ohc=WHqhjN5p2nMAX8ikyqA&_nc_ht=scontent.faep24-1.fna&oh=fdd0bc9d8fc698833e2111a64e3ec1a5&oe=60A09127');">
+                        <a href="#modalRiver" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/Eot4i2bW8AMdVhP?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">River Plate</h3>
@@ -923,7 +926,7 @@
                                     <li>Maricel González - 17/5/2001</li>
                                     <li class="li--color">Agostina Holzheier - 30/9/2003</li>
                                     <li>Grecia Nazarena Ledesma - 6/2/2003</li>                                    </li>
-                                    <li class="li--color">Lourdes Lezcano / 24/3/1996</li>
+                                    <li class="li--color">Lourdes Lezcano - 24/3/1996</li>
                                     <li>Andrea López Lajterman - 4/10/1991</li>
                                     <li class="li--color">Belén Ludueña - 7/6/2004</li>
                                     <li>Lucía Martelli - 9/11/1989</li>
@@ -956,7 +959,7 @@
                 <!--Rosario Central-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalCentral" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/165534617_279722716979310_1481963217820432450_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=a26aad&_nc_ohc=LcL2AgpQYeQAX_7lptK&_nc_ht=scontent.faep24-1.fna&oh=549c3db63c4b80243a976c1753ab1621&oe=60A20EDA');">
+                        <a href="#modalCentral" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/E0476RdXEAIUx6l?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Rosario Central</h3>
@@ -1018,7 +1021,7 @@
                 <!--San Lorenzo-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalSanLorenzo" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/138354723_2444584979183153_8074994292634028283_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=0debeb&_nc_ohc=57vMzMuZaxoAX8xl9aq&_nc_ht=scontent.faep24-1.fna&oh=05033d633c3839beb91d89d822d92a2a&oe=60A0CCA0');">
+                        <a href="#modalSanLorenzo" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/E5Jb0vqWQAQgRde?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">San Lorenzo</h3>
@@ -1080,7 +1083,7 @@
                 <!--S.A.T.-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalSat" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/132843328_982146482310359_5229125734131415088_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=730e14&_nc_ohc=0xjI3suCfNcAX8x51x-&_nc_ht=scontent.faep24-1.fna&oh=01d3d40b5c15c00bb38324b28b6adf6c&oe=60A00E42');">
+                        <a href="#modalSat" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/E32-PUHWYAAVAbK?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Social Atl. Televisión</h3>
@@ -1142,7 +1145,7 @@
                 <!--UAI Urquiza-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalUai" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/130723497_2425201537788164_2685684309785418527_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=0debeb&_nc_ohc=7mwdF4dgyFYAX8c7kU4&_nc_ht=scontent.faep24-1.fna&oh=3d5826b14a94525c4f38fb6c373282d9&oe=60A10EEB');">
+                        <a href="#modalUai" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/EpCt8FsWMAAJXBH?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">UAI Urquiza</h3>
@@ -1204,7 +1207,7 @@
                 <!--Villa San Carlos-->
                 <div class="col-md-6 col-lg-3">
                     <div class="planteles--formato justify-content-end">
-                        <a href="#modalSanCarlos" data-toggle="modal" style="background-image: url('https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/127577196_2414863775488607_189898263300431444_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=0debeb&_nc_ohc=Qf1yGmAgwawAX-IvpKM&_nc_oc=AQkeXGXmOF19lp_pY4C8u7Yql8tBmYfbyM_9-zDV9xT81g7KOb9Uw0PVAVkud5RAkmw&_nc_ht=scontent.faep24-1.fna&oh=6d258557a22656b30173db08a9a40f79&oe=60A1387B');">
+                        <a href="#modalSanCarlos" data-toggle="modal" style="background-image: url('https://pbs.twimg.com/media/E46IjBEWQAA7HI-?format=jpg&name=large');">
                         </a>
                         <div class="text d-block">
                             <h3 class="titulo--oscuro text-center">Villa San Carlos</h3>
@@ -1290,6 +1293,11 @@
     <!--Scripts BS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!--Script JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js.js"></script>
     <!-------------->
     
     </body>

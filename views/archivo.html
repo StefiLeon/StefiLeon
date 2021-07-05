@@ -9,8 +9,6 @@
     <meta name="keywords" content="FUTBOL, DEPORTE, FEMENINO, MUJER, ARGENTINA, SELECCION">
     <title>Archivo histórico de la Selección Argentina</title>
     <link rel="icon" href="https://cdn3.ct-assets.com/assets/landings/womens-world-cup-2019/logo-f11500c9bd7395ac801e2255091433ae4942be72222ba9fba525c8dfbec2f3ba.png">
-    <!--Animations-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -34,6 +32,12 @@
         <!--Botones-->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="./productos.html" id="carritoDeCompras" class="numero-flotante position-relative d-inline-flex nav-link">Ver productos <i class="fas fa fa-shopping-cart fa-lg"></i>
+                </a>
+                <div class="container" id="lista-carrito" style="display: none"> 
+                    <p id="totalCompra"></p>
+                </div>
+                </li>
                 <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="./fotos.html" class="nav-link">Fotos</a></li>
                 <li class="nav-item active"><a href="./archivo.html" class="nav-link">Archivo</a></li>
@@ -57,7 +61,7 @@
     <!--Empieza Hero element-->
     <div class="hero-image" id="hero--archivo">
         <div class="hero-text">
-            <h1 class="animate__animated animate__lightSpeedInLeft">Archivo histórico</h1>
+            <h1 class="animacionDelay" style="display: none";>Archivo histórico</h1>
             <p>Datos de Selección</p>
         </div>
     </div>
@@ -370,6 +374,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <!-------------->
+
+        <!--Script JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="../js.js"></script>
+        <!-------------->
     
     </body>
     </html>

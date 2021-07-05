@@ -1,0 +1,103 @@
+{
+    "goleadoras": [
+        {
+            "nombre": "Carolina",
+            "apellido": "Birizamberri",
+            "equipo": "River Plate",
+            "goles": 9,
+            "imagen": "https://artear-tn-prod.cdn.arcpublishing.com/resizer/uNaqSpU8oAr_dfFyZ8_XiMBKFb0=/767x0/smart/filters:quality(60)/cloudfront-us-east-1.images.arcpublishing.com/artear/PUWXYSG4HBCMXCX6QSPO632VF4.jpg",
+            "fechaDeNacimiento": "09/07/1995",
+            "ultimoGol": "fecha 6"
+        },
+        {
+            "nombre": "Débora",
+            "apellido": "Molina",
+            "equipo": "San Lorenzo",
+            "goles": 9,
+            "imagen": "https://sanlorenzo.com.ar/img/plantel/deportes/2020/g/10-22_1603394639.jpg",
+            "fechaDeNacimiento": "14/02/1985",
+            "ultimoGol": "fecha 9"
+        },
+        {
+            "nombre": "Yazmín Ayelén",
+            "apellido": "Acuña",
+            "equipo": "El Porvenir",
+            "goles": 8,
+            "imagen": "https://www.elporve.com.ar/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-19-at-14.08.02.jpeg",
+            "fechaDeNacimiento": "19/02/2002",
+            "ultimoGol": "fecha 9"
+        },
+        {
+            "nombre": "Yamila",
+            "apellido": "Rodríguez",
+            "equipo": "Boca Juniors",
+            "goles": 8,
+            "imagen": "https://www.bocajuniors.com.ar/upload/files/yamila-rodriguez-mesa-de-trabajo-1_c6081.jpg",
+            "fechaDeNacimiento": "24/1/1998",
+            "ultimoGol": "fecha 9"
+        },
+        {
+            "nombre": "Rocío",
+            "apellido": "Bueno",
+            "equipo": "Racing",
+            "goles": 7,
+            "imagen": "https://www.racingclub.com.ar/img/futbol/jugadores/1018_bueno.jpg",
+            "fechaDeNacimiento": "16/10/1992",
+            "ultimoGol": "fecha 9"
+        },
+        {
+            "nombre": "Lourdes",
+            "apellido": "Lezcano",
+            "equipo": "River",
+            "goles": 7,
+            "imagen": "https://www.cariverplate.com.ar/imagenes/jugadores/2020-12/1766-7.png",
+            "fechaDeNacimiento": "24/3/1996",
+            "ultimoGol": "fecha 9"
+        },
+        {
+            "nombre": "Agustina",
+            "apellido": "Arias",
+            "equipo": "Platense",
+            "goles": 6,
+            "imagen": "https://www.elciudadanoweb.com/wp-content/uploads/2021/04/prensa-platense-768x512.jpg",
+            "fechaDeNacimiento": "3/11/2003",
+            "ultimoGol": "fecha 8"
+        },
+        {
+            "nombre": "Érica",
+            "apellido": "Lonigro",
+            "equipo": "Rosario Central",
+            "goles": 6,
+            "imagen": "https://www.afa.com.ar/upload/DSC_4660.JPG",
+            "fechaDeNacimiento": "6/7/1994",
+            "ultimoGol": "fecha 7"
+        },
+        {
+            "nombre": "Lucía",
+            "apellido": "Martelli",
+            "equipo": "River Plate",
+            "goles": 6,
+            "imagen": "https://www.cariverplate.com.ar/imagenes/jugadores/2020-12/1770-18.png",
+            "fechaDeNacimiento": "9/11/1989",
+            "ultimoGol": "fecha 6"
+        },
+        {
+            "nombre": "Andrea",
+            "apellido": "Ojeda",
+            "equipo": "Boca Juniors",
+            "goles": 6,
+            "imagen": "https://www.bocajuniors.com.ar/upload/files/andrea-ojeda-mesa-de-trabajo-1_6a267.jpg",
+            "fechaDeNacimiento": "17/01/1985",
+            "ultimoGol": "fecha 9"
+        },
+        {
+            "nombre": "Laura",
+            "apellido": "Romero",
+            "equipo": "Deportivo Español",
+            "goles": 6,
+            "imagen": "../img/laura-romero.jpg",
+            "fechaDeNacimiento": "1/10/1993",
+            "ultimoGol": "fecha 8"
+        }
+    ]
+}

@@ -9,8 +9,6 @@
     <meta name="keywords" content="FUTBOL, DEPORTE, FEMENINO, MUJER, ARGENTINA, SELECCION">
     <title>Fotos de la Selección Argentina Femenina</title>
     <link rel="icon" href="https://cdn3.ct-assets.com/assets/landings/womens-world-cup-2019/logo-f11500c9bd7395ac801e2255091433ae4942be72222ba9fba525c8dfbec2f3ba.png">
-    <!--Animations-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -34,6 +32,11 @@
         <!--Botones-->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="./productos.html" id="carritoDeCompras" class="numero-flotante position-relative d-inline-flex nav-link">Ver productos <i class="fas fa fa-shopping-cart fa-lg"></i>
+                </a>
+                <div class="container" id="lista-carrito" style="display: none"> 
+                    <p id="totalCompra"></p>
+                </div>
                 <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
                 <li class="nav-item active"><a href="./fotos.html" class="nav-link">Fotos</a></li>
                 <li class="nav-item"><a href="./archivo.html" class="nav-link">Archivo</a></li>
@@ -57,7 +60,7 @@
     <!--Empieza Hero element-->
     <div class="hero-image" id="hero--fotos">
         <div class="hero-text">
-            <h1 class="animate__animated animate__lightSpeedInLeft">Fotos Albicelestes</h1>
+            <h1 class="animacionDelay" style="display: none";>Fotos Albicelestes</h1>
             <p>Postales de Selección</p>
         </div>
     </div>
@@ -68,35 +71,35 @@
         <div class="row">
             <div class="columna-fotos">
                 <div class="img--fotos" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/fotos-1.jpg)">
-                    <h3><a href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2001771560131166">Entrenamientos</a></h3>
+                    <h3><a target="_blank" href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2001771560131166">Entrenamientos</a></h3>
                 </div>
-                <div class="img--fotos--3" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/45815650_1903826719925651_2523854333682909184_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=xntXVHrUfXYAX-9JC5s&_nc_ht=scontent.faep24-1.fna&oh=58014d4aada814ef5d359c10bee555fd&oe=60AF1ABF)">
-                    <h3><a href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.1903821456592844">Repechaje 2018</a></h3>
+                <div class="img--fotos--3" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/repechaje.jpg)">
+                    <h3><a target="_blank" href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.1903821456592844">Repechaje 2018</a></h3>
                 </div>
                 <div class="img--fotos" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/fotos-3.jpg)">
-                    <h3><a href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2055009884807333">Lima 2019</a></h3>
+                    <h3><a target="_blank" href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2055009884807333">Lima 2019</a></h3>
                 </div>
             </div>
             <div class="columna-fotos">
                 <div class="img--fotos--2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/fotos-4.jpg)">
-                    <h3><a href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2505126123129038">Amistosos</a></h3>
+                    <h3><a target="_blank" href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2505126123129038">Amistosos</a></h3>
                 </div>
-                <div class="img--fotos--2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/53435360_1966403713667951_8428459120343908352_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=W3Qc8uaj6psAX8kMifo&_nc_ht=scontent.faep24-1.fna&oh=90a3b649612d4020a0336e3056c20e76&oe=60B051E0)">
-                    <h3><a href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.1966395430335446">Cup of Nations</a></h3>
+                <div class="img--fotos--2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/cup-of-nations.jpg)">
+                    <h3><a target="_blank" href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.1966395430335446">Cup of Nations</a></h3>
                 </div>
-                <div class="img--fotos--2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/89154330_2218066105168376_1599550386304188416_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=5R6V7pHu7ZkAX_lsdmd&_nc_ht=scontent.faep24-1.fna&oh=67499f60a2887aa2acb41d0b3b9f3d89&oe=60AE05B7)">
-                    <h3><a href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2229239950717658">San Juan 2020</a></h3>
+                <div class="img--fotos--2" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/san-juan-2020.jpg)">
+                    <h3><a target="_blank" href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2229239950717658">San Juan 2020</a></h3>
                 </div>
             </div>
             <div class="columna-fotos">
                 <div class="img--fotos--3" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/fotos-5.jpg)">
-                    <h3><a href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2090981364543518">Juveniles</a></h3>
+                    <h3><a target="_blank" href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2090981364543518">Juveniles</a></h3>
                 </div>
                 <div class="img--fotos" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://pbs.twimg.com/media/D89yPItXoAEIHi5?format=jpg&name=large)">
-                    <h3><a href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2022332868075035">Francia 2019</a></h3>
+                    <h3><a target="_blank" href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2022332868075035">Francia 2019</a></h3>
                 </div>
-                <div class="img--fotos--3" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/153286099_2470127849962199_7861607399950294741_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=0debeb&_nc_ohc=dRJh77BFuRkAX94WOy4&_nc_ht=scontent.faep24-1.fna&oh=8423448d69bbf0c2ee56e791a0761e17&oe=60ADD518)">
-                    <h3><a href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2468222353486082">She Believes</a></h3>
+                <div class="img--fotos--3" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(https://pbs.twimg.com/media/Eu35YFwXEAUMX7C?format=jpg&name=large)">
+                    <h3><a target="_blank" href="https://www.facebook.com/media/set/?vanity=lasfotosdelasjugadoras&set=a.2468222353486082">She Believes</a></h3>
                 </div>
             </div>
         </div>
@@ -126,6 +129,11 @@
     <!--Scripts BS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!--Script JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js.js"></script>
     <!-------------->
     
     </body>

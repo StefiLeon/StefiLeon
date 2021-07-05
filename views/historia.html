@@ -9,8 +9,6 @@
     <meta name="keywords" content="FUTBOL, DEPORTE, FEMENINO, MUJER, ARGENTINA, AFA">
     <title>Historia del fútbol femenino argentino</title>
     <link rel="icon" href="https://cdn3.ct-assets.com/assets/landings/womens-world-cup-2019/logo-f11500c9bd7395ac801e2255091433ae4942be72222ba9fba525c8dfbec2f3ba.png">
-    <!--Animations-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -34,6 +32,11 @@
         <!--Botones-->
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="./productos.html" id="carritoDeCompras" class="numero-flotante position-relative d-inline-flex nav-link">Ver productos <i class="fas fa fa-shopping-cart fa-lg"></i>
+                </a>
+                <div class="container" id="lista-carrito" style="display: none"> 
+                    <p id="totalCompra"></p>
+                </div>
                 <li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="./fotos.html" class="nav-link">Fotos</a></li>
                 <li class="nav-item"><a href="./archivo.html" class="nav-link">Archivo</a></li>
@@ -57,7 +60,7 @@
     <!--Empieza Hero element-->
     <div class="hero-image" id="hero--historia">
         <div class="hero-text">
-            <h1 class="animate__animated animate__lightSpeedInLeft">Historia del torneo local</h1>
+            <h1 class="animacionDelay" style="display: none";>Historia del torneo local</h1>
             <p>De 1991 a la actualidad</p>
         </div>
     </div>
@@ -71,7 +74,7 @@
                 <p>El primer torneo oficial de Fútbol Femenino organizado por la AFA se disputó en el segundo semestre de 1991. A partir de esa fecha se llevaron a cabo 42 campeonatos de la Primera "A", 5 de la "B" y uno de la "C" que por la Cuarentena no se llegó a completar. Los números de cada club corresponde a cuántos torneos compitieron en fútbol femenino (sea en la A, B o C).
                 La lista la encabeza River Plate e Independiente, que son los únicos que tuvieron siempre la actividad. Las de Nuñez 42 torneos en la A, las Diablas 41 en la máxima categoría y uno en el ascenso. Boca, el club más ganador, completa el podio (solo faltó a un torneo por tener a la mayoría de sus jugadoras en la Selección Argentina que entrenaba para el Mundial del 2003).
                 </p>
-                <img src="https://scontent.faep24-1.fna.fbcdn.net/v/t1.18169-9/11537715_589715304504089_1278136709536607097_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=qIqSjkAZEnQAX88ivIS&_nc_ht=scontent.faep24-1.fna&oh=be80ffc858f1dc2c6c47f3d0551e7f94&oe=60A0F9B8" alt="" class="img-fluid imagen--md">
+                <img src="../img/river-90s.jpg" alt="Equipo femenino de River en los años 90" class="img-fluid imagen--md">
                 <figcaption class="mb-3">El equipo de River en los '90 - Fuente: Diario La Futbolista</figcaption>
                 <p>El fútbol femenino en Argentina sufrió una gran disminución de participantes en la primera década de este siglo XXI en comparación con el final de los ´90.
                 Sin televisación, sin compromiso de muchos por mantener la disciplina, se pasó de 49 equipos a la reducción de 26 clubes compitieron desde el 2000 al 2009. Como novedad hay que incluir tres nuevas instituciones que se sumaron con desenlace diferente y distinta duración: Gimnasia y Esgrima de La Plata, Estudiantes de Buenos Aires y FC. General Urquiza.
@@ -84,7 +87,7 @@
                 <p>San Lorenzo fue otro gran equipo en la década. Consiguió 7 subcampeonatos. Pero dos fueron sus grandes logros: el título del Apertura 2008, invicto, rompió con la hegemonía de Boca y River, con el agregado que en ese torneo le quebró a las Xeneizes la racha partidos sin perder. Posteriormente tuvo que disputar con las Millonarias el pasaje a la primera Copa Libertadores Femenina, ganando la serie, convirtiéndose en el 2009 las Santitas en el primer representante argentino en disputar dicho certamen.
                 De ese equipo aún están vigentes: Eliana Medina, Carina Nuñez (futsal), Florencia Quiñones y Noelia Espíndola (Boca), Magali Molina (Lanús), entre otras. En la Copa su arquera titular fue Lucila Sandoval.
                 Boca, River y San Lorenzo fueron los grandes protagonistas de esta década y marcaron una tendencia que se repetiría en los años siguientes: estar en la elite del fútbol femenino argentino. <i>Fuente: Diario La Futbolista</i></p>
-                <img src="https://scontent.faep24-1.fna.fbcdn.net/v/t31.18172-8/1493432_589804091161877_1064636920483177746_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=mkXw3ZgHV4sAX8H6p_1&_nc_ht=scontent.faep24-1.fna&oh=a8b9308e48ad8ccb6be9d07bf15e1730&oe=609F6652" alt="" class="img-fluid">
+                <img src="../img/boca.jpeg" alt="" class="img-fluid">
                 <figcaption class="mb-3">Boca Juniors - Diario La Futbolista</figcaption>
                 <h2 class="mb-3 mt-3 titulo--oscuro titulo--chico">La semiprofesionalización</h2>
                 <p>El 17 de marzo del 2019 la AFA y Futbolistas Argentinos Agremiados (FAA) firmaron un acuerdo macro para incorporar al torneo de Primera División femenino como categoría profesional. Esto implica que todos los clubes que participan de ese torneo quedan afectados por el Convenio Colectivo de Trabajo Nº557/09. Con esto, los clubes que participan en el torneo están obligado a firmar un mínimo de ocho contratos profesionales con un sueldo básico equivalente al que tienen los futbolistas de la Primera C (en este momento está alrededor de los 20 mil pesos). Según el convenio de trabajo, el club está obligado a pagar lo establecido en el contrato, a dar un día de descanso laboral por semana, a prestar asistencia médica por lesión y a pagar gastos de transporte en caso de viaje. También, según el reglamento del certamen, todos los clubes deben contar con una ambulancia y un médico matriculado a la hora de disputar un partido como local, de lo contrario el mismo no se puede iniciar.
@@ -95,19 +98,19 @@
                 <div class="sidebar-box">
                     <h3 class="mb-3 titulo--oscuro">Más información</h3>
                     <div class="card mb-5" style="width: 100%;">
-                        <a href="../views/plantelesApertura.html"><img class="card-img-top" src="https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/131245520_2425197524455232_1275837926128626477_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=0debeb&_nc_ohc=TpIbH37kuqgAX9kqWDg&_nc_ht=scontent.faep24-1.fna&oh=8f34b949910259c6f5c82bd0ffb25225&oe=609E1046" alt="Card image cap"></a>
+                        <a href="../views/plantelesApertura.html"><img class="card-img-top" src="https://pbs.twimg.com/media/E1cMyiJXIAM7-U2?format=jpg&name=large" alt="Planteles apertura femenino"></a>
                         <div class="card-body">
                             <p class="card-text text-center"><a class="titulo--oscuro" href="../views/plantelesApertura.html">Planteles de Primera A</a></p>
                         </div>
                     </div>
                     <div class="card mb-5" style="width: 100%;">
-                        <a href="../views/goleadorasApertura.html"><img class="card-img-top" src="https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/129953725_2423268464648138_1641506402241178571_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=0debeb&_nc_ohc=TtHF8Tu6kuUAX9lHVRu&_nc_ht=scontent.faep24-1.fna&oh=7fa090ae98ddf255f7b660cbb6e41683&oe=609EC43B" alt="Card image cap"></a>
+                        <a href="../views/goleadorasApertura.html"><img class="card-img-top" src="https://pbs.twimg.com/media/E4bs9IjWQAQtMqh?format=jpg&name=large" alt="Goleadoras apertura femenino"></a>
                         <div class="card-body">
                             <p class="card-text text-center"><a class="titulo--oscuro" href="../views/goleadorasApertura.html">Goleadoras del torneo</a></p>
                         </div>
                     </div>
                     <div class="card mb-5" style="width: 100%;">
-                        <a href="../views/resultadosApertura.html"><img class="card-img-top" src="https://scontent.faep24-1.fna.fbcdn.net/v/t1.6435-9/140805661_2451335715174746_154792392540004564_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=0debeb&_nc_ohc=ftRo6MwluqcAX-ACX32&_nc_ht=scontent.faep24-1.fna&oh=118e1d30a588baeead4314bec4f71f32&oe=609E4BE8" alt="Card image cap"></a>
+                        <a href="../views/resultadosApertura.html"><img class="card-img-top" src="https://pbs.twimg.com/media/E1DXGjQXMAEkzFr?format=jpg&name=large" alt="Resultados apertura femenino"></a>
                         <div class="card-body">
                             <p class="card-text text-center"><a class="titulo--oscuro" href="../views/resultadosApertura.html">Resultados del certamen</a></p>
                         </div>
@@ -164,6 +167,11 @@
     <!--Scripts BS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!--Script JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../js.js"></script>
     <!-------------->
     
     </body>
